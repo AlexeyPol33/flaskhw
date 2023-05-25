@@ -1,6 +1,5 @@
 from models import Session, Users, Advertisements, UserAdvertisements
-from sqlalchemy.exc import IntegrityError
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash
 
 class HttpError(Exception):
     def __init__(self,status_code, message) -> None:

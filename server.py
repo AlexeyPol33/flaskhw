@@ -1,13 +1,10 @@
 from flask import Flask, jsonify, request
 from flask.views import MethodView
-from models import Session, Users, Advertisements, UserAdvertisements
-from sqlalchemy.exc import IntegrityError
 from crud import UserCRUD, AdvertisementCRUD, HttpError
 from validation_model import CreateUser,\
 PatchUser,CreateAdvertisement,PatchAdvertisement,validate_json,check_post_limit
 from crud import UserCRUD, AdvertisementCRUD
 from auth import user_limited_access, advertisement_limited_acces
-from functools import wraps
 
 app = Flask("app")
 

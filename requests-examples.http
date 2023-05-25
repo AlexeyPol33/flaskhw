@@ -178,7 +178,7 @@ GET {{baseUrl}}/advertisement/test_advertisement
 Content-Type: application/json
 
 ###
-DELETE {{baseUrl}}/advertisement/1
+DELETE {{baseUrl}}/advertisement/2
 Content-Type: application/json
 Authorization: Basic test2:testtest2
 
